@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actLanchonete">
+
+    <ImageView
+        android:id="@+id/imgLanches"
+        android:layout_width="153dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="129dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtLanches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="174dp"
+        android:text="Lanches"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLanches" />
+
+    <RadioGroup
+        android:id="@+id/rdbGrupo"
+        android:layout_width="188dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLanches">
+
+        <RadioButton
+            android:id="@+id/rdbBurger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TrocarImagem"
+            android:text="X Burger - R$12,00"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdbSalada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TrocarImagem"
+            android:text="X Salada - R$15,00"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdbBacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TrocarImagem"
+            android:text="X Bacon - R$ 16,00"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtOpcionais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="161dp"
+        android:text="Opcionais"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbGrupo" />
+
+    <CheckBox
+        android:id="@+id/cbxCheddar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="148dp"
+        android:text="Cheddar - R$2,00"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxMaionese" />
+
+    <CheckBox
+        android:id="@+id/cbxOvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="165dp"
+        android:text="Ovo - R$3,00"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxCheddar" />
+
+    <CheckBox
+        android:id="@+id/cbxMaionese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="124dp"
+        android:text="Maionese - R$2,00"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcionais" />
+
+    <Button
+        android:id="@+id/btnPedir"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="147dp"
+        android:onClick="Pedir"
+        android:text="Pedir"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxOvo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
