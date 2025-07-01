@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actPrincipal">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:text="Selecione o Curso"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="278dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo">
+
+        <RadioButton
+            android:id="@+id/rdbAdministracao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administração" />
+
+        <RadioButton
+            android:id="@+id/rdbDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolviento de Sistemas" />
+
+        <RadioButton
+            android:id="@+id/rdbMarketing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marketing" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtDisponibilidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="90dp"
+        android:text="Disponibilidade"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/chkManha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="268dp"
+        android:text="Manhã"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisponibilidade" />
+
+    <CheckBox
+        android:id="@+id/chkTarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="274dp"
+        android:text="Tarde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkManha" />
+
+    <CheckBox
+        android:id="@+id/chkNoite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="276dp"
+        android:text="Noite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkTarde" />
+
+    <TextView
+        android:id="@+id/txtExibir"
+        android:layout_width="333dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="143dp"
+        android:onClick="Exibir"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisponibilidade" />
+</androidx.constraintlayout.widget.ConstraintLayout>
