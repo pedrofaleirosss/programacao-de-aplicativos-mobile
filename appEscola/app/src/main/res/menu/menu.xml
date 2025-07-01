@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Cadastro" android:id="@+id/mniCadastro">
+        <menu>
+            <item android:title="Alunos" android:id="@+id/mniCAlunos"></item>
+        </menu>
+    </item>
+    <item android:title="Relatórios" android:id="@+id/mniRelatorios">
+        <menu>
+            <item android:title="Alunos" android:id="@+id/mniRAlunos"></item>
+        </menu>
+    </item>
+    <item android:title="Sair" android:id="@+id/mniSair"></item>
+</menu>
