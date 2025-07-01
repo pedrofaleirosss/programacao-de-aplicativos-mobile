@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMontadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="263dp"
+        android:text="Montadora:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="134dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontadora">
+
+        <RadioButton
+            android:id="@+id/rdbVW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Mostrar"
+            android:text="Volkswagen"
+            android:textColor="#040404" />
+
+        <RadioButton
+            android:id="@+id/rdbHonda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Mostrar"
+            android:text="Honda"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rdbFord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Mostrar"
+            android:text="Ford"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="295dp"
+        android:text="Modelo:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="37dp"
+        android:text="Carro"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/cb2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModelo" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="49dp"
+        android:text="Carro"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/cb3"
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="62dp"
+        android:text="Carro"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtOpcionais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="273dp"
+        android:text="Opcionais:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb1" />
+
+    <CheckBox
+        android:id="@+id/cbTeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="95dp"
+        android:text="Teto-solar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btnFabricar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcionais" />
+
+    <CheckBox
+        android:id="@+id/cbAr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="55dp"
+        android:text="Ar-condicionado"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btnFabricar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbTeto" />
+
+    <Button
+        android:id="@+id/btnFabricar"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="48dp"
+        android:background="#3B78D3"
+        android:onClick="Exibir"
+        android:text="Fabricar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtOpcionais"
+        app:layout_constraintTop_toBottomOf="@+id/cb3" />
+
+    <TextView
+        android:id="@+id/txtExibir"
+        android:layout_width="334dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAr" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="164dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
